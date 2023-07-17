@@ -11,8 +11,8 @@ int main()
     // cout << "test:" << test[0] << endl;
 
     //! output initialize state
-    hash.state();
-    cout << endl;
+    // hash.state();
+    // cout << endl;
 
     //! step 2
     vector<bitset<32>> test2 = hash.chunk(test);
@@ -23,7 +23,9 @@ int main()
 
     //! step 3
     hash.algorithm(test2);
-    hash.state();
+    // hash.state();
+
+    
 
     return 0;
 }
