@@ -11,3 +11,4 @@ $(OBJ): $(SRC)
 clean:
 	rm -f $(EXE)
 	rm -f $(OBJ)
+	rm -f *.gch
