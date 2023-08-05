@@ -1,13 +1,25 @@
 #include "head.h"
 #include "sha-256.h"
 
-int main()
+int main(int argc, char *argv[])
 {
     //!
     sha hash;
     string temp;
-    cout << "input the message:";
-    getline(cin, temp);
+
+    if (argv[1] != NULL)
+    {
+        temp = argv[1];
+        // cout << "input arguments:" << argv[1] << endl;
+    }
+    else
+    {
+        // cout << "test input" << endl;
+        temp = "test_sha-256";
+        // cout << "input the message:";
+        // getline(cin, temp);
+    }
+
     vector<bitset<8>> test = hash.message_transfer(temp);
     // cout << "test:" << test.size() << endl;
 
